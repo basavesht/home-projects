@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions targetNamespace="http://endpointInterface.documentStyle.sample.tcs.com/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpointInterface.documentStyle.sample.tcs.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://endpointInterface.documentStyle.sample.tcs.com/" schemaLocation="HelloWorld_schema1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="getHelloWorldAsString">
+    <part name="parameters" element="tns:getHelloWorldAsString"/>
+  </message>
+  <message name="getHelloWorldAsStringResponse">
+    <part name="parameters" element="tns:getHelloWorldAsStringResponse"/>
+  </message>
+  <message name="getHelloWorldAsObject">
+    <part name="parameters" element="tns:getHelloWorldAsObject"/>
+  </message>
+  <message name="getHelloWorldAsObjectResponse">
+    <part name="parameters" element="tns:getHelloWorldAsObjectResponse"/>
+  </message>
+  <portType name="HelloWorld">
+    <operation name="getHelloWorldAsString">
+      <input message="tns:getHelloWorldAsString"/>
+      <output message="tns:getHelloWorldAsStringResponse"/>
+    </operation>
+    <operation name="getHelloWorldAsObject">
+      <input message="tns:getHelloWorldAsObject"/>
+      <output message="tns:getHelloWorldAsObjectResponse"/>
+    </operation>
+  </portType>
+</definitions>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:UserDetailsResponseDocument" xmlns:tns="urn:UserDetailsResponseDocument" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<element name="UserDetailsResponseDocument" type="tns:UserDetailsResponse"/>
+	<complexType name="UserDetailsResponse">
+		<sequence>
+			<element name="message" type="string" nillable="false"/>
+		</sequence>
+	</complexType>
+</schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:UserDetailsDocument" xmlns:tns="urn:UserDetailsDocument" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<element name="UserDetailsDocument" type="tns:UserDetails"/>
+	<complexType name="Address">
+		<sequence>
+			<element name="street" type="string" nillable="false"/>
+			<element name="city" type="string" nillable="false"/>
+			<element name="state" type="string" nillable="false"/>
+			<element name="zipCode" type="string" nillable="false"/>
+		</sequence>
+	</complexType>
+	<complexType name="UserDetails">
+		<sequence>
+			<element name="homeAddress" type="tns:Address" nillable="false"/>
+			<element name="name" type="string" nillable="false"/>
+			<element name="city" type="string" nillable="false"/>
+		</sequence>
+	</complexType>
+</schema>
